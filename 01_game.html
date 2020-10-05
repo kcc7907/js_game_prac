@@ -1,19 +1,41 @@
 <!DOCTYPE html>
-<html lang="zh-Hant" onclick="jump()">
+<html lang="zh-Hant">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>01game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet" href="./css/01.css">
 </head>
 
 <body>
-    <div id="game">
+    <!-- <div id="game" onclick="jump()">
         <div id="character"></div>
         <div id="block"></div>
+    </div> -->
+    <!--  -->
+    <div class="game2">
+        <i id="checkmark" class="far fa-check-square fa-5x"></i>
+        <i id="wrong" class="fas fa-times fa-5x"></i>
+        <div class="top">
+            <button class="start">start</button>
+            <div id="color1" class="colorText color1"></div>
+            <div id="color2" class="colorText color2"></div>
+        </div>
+        <div class="bottom">
+            <div class="row">
+                <div id="blue" class="color blue"></div>
+                <div id="red" class="color red"></div>
+            </div>
+            <div class="row">
+                <div id="green" class="color green"></div>
+                <div id="yellow" class="color yellow"></div>
+            </div>
+        </div>
+        <span id="correct"></span>
+        <span id="time"></span>
     </div>
-
     <script src="./js/01.js"></script>
 </body>
 
